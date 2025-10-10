@@ -1,4 +1,8 @@
+// scripts
+import { HomePage } from "./scripts/HomePage.js";
+
+// styles
 import "./styles/reset.css";
 import "./styles.css";
 
-console.log("test");
+const home = new HomePage();
