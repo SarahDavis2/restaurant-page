@@ -82,7 +82,7 @@ header, .board {
 }
 
 .card.subtitle {
-  width: 60px;
+  width: 60%;
 }
 
 .card {
@@ -92,4 +92,8 @@ header, .board {
 
   padding: 24px;
   width: 80%;
+}
+
+.price {
+  font-weight: bold;
 }

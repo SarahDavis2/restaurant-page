@@ -19,12 +19,9 @@ class HomePage extends Page {
         this.addCard("Location", "6769 Top Bars Street, Barstool, NY, 69420");
     }   
     addHours(inputHeader, list) {
-        const card = document.createElement('div');
-        const header = document.createElement('h2');
+        const card = this.addBlankCard(inputHeader);
         const ul = document.createElement('ul');
 
-        card.classList.add('card');
-        header.textContent = inputHeader;
         ul.setAttribute('role', 'list');
         list.forEach((item) => {
             const addItem = document.createElement('li');
@@ -32,8 +29,6 @@ class HomePage extends Page {
             ul.appendChild(addItem);
         });
 
-        this.board.appendChild(card);
-        card.appendChild(header);
         card.appendChild(ul);
     }
 }
