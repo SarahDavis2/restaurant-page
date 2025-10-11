@@ -14,4 +14,4 @@ There were a few issues that I skipped for styling, and if I were to do this pro
 ## Live Demo
 [Live Demo Screenshot](./src/assets/pics/demo.png)
 
-[Live Demo]()
+[Live Demo](https://sarahdavis2.github.io/restaurant-page/)
