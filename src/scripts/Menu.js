@@ -4,7 +4,7 @@ class Menu extends Page {
     constructor() {
         super();
     }
-    addItem(inputName, inputDesc, inputPrice) {
+    #addItem(inputName, inputDesc, inputPrice) {
         const card = this.addBlankCard(inputName);
         const desc = document.createElement('p');
         const price = document.createElement('p');
@@ -19,9 +19,9 @@ class Menu extends Page {
     render() {
         this.addTitle("Menu");
         this.addSubTitle("Drinks");
-        this.addItem("Barry's Blastoff!", '"This mixed berry smoothie is ABSOLUTELY SCRUMPTIOUS!" -Barry', "$5");
+        this.#addItem("Barry's Blastoff!", '"This mixed berry smoothie is ABSOLUTELY SCRUMPTIOUS!" -Barry', "$5");
         this.addSubTitle("Food");
-        this.addItem("Avocado Toast", `"OMG. IT'S SO Creamy! :)" -Bernie`, "$7")
+        this.#addItem("Avocado Toast", `"OMG. IT'S SO Creamy! :)" -Bernie`, "$7")
     }
 }
 

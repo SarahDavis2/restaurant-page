@@ -1,14 +1,13 @@
 class Page {
-    constructor() {
-        this.board = document.querySelector('.board');
-    }
+    #board = document.querySelector('.board');
+    constructor() {}
     #addBlankTitle(inputTitle) {
         const title = document.createElement('div');
         const h1 = document.createElement('h1');
 
         h1.textContent = inputTitle;
 
-        this.board.appendChild(title);
+        this.#board.appendChild(title);
         title.appendChild(h1);
 
         return title;
@@ -28,7 +27,7 @@ class Page {
         card.classList.add('card');
         header.textContent = inputHeader;
 
-        this.board.appendChild(card);
+        this.#board.appendChild(card);
         card.appendChild(header);
 
         return card;
