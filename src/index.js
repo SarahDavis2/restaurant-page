@@ -10,7 +10,7 @@ import "./styles.css";
 class LoadPage {
     // initiate data
     #board = document.querySelector('.board');
-    #prvSelected = null;
+    #prvSelected = null; // variable for btnSelect() & home initialization
 
     // load renders
     #home = new Home();
@@ -54,8 +54,3 @@ class LoadPage {
     }
 }
 new LoadPage();
-
-// TODO: ADD IMAGES TO MENU WITH WEBPACK SUPPORT
-// ALSO AM I SUPPOSE TO ADD STYLING THROUGH JAVASCRIPT AND NOT CSS?
-// MAY NEED TO EXTEND ENTIRE PAGE TO WINDOW HEIGHT
-// MAKE SURE PAGE VARIABLES AER PRIVATE?
